@@ -1,0 +1,148 @@
+@font-face {
+  font-family: matterLight;
+  src: url(./assets/fonts/matter-light.ttf);
+}
+
+@font-face {
+  font-family: matterRegular;
+  src: url(./assets/fonts/matter-regular.ttf);
+}
+
+@font-face {
+  font-family: robotoLatin;
+  src: url(./assets/fonts/roboto-flex-latin.ttf);
+}
+
+.headerVideo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40%;
+}
+
+.page2Video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page4Video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.featuredCard {
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
+}
+
+.featuredCard:hover {
+  scale: 1.1;
+  opacity: 0;
+}
+
+.page4Span {
+  font-weight: normal;
+}
+
+.featuredcard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+.scroller::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+#footerHover::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+
+#footerHover {
+  position: absolute;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  height: 0%;
+  transition: .3s ease-in-out;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  color: #111111;
+  align-items: center;
+  overflow: hidden;
+  gap: 1vw;
+
+}
+
+.footer:hover #footerHover {
+  height: 100%;
+}
+
+.footerHoverEffect {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  transition: .3s ease-in-out;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  z-index: -3;
+}
+
+.hoveredText,
+.page9Text {
+  transition: .3s ease-in-out;
+}
+
+.footerBtn:hover .footerHoverEffect {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  height: 100%;
+  background-color: white;
+}
+
+.footerBtn:hover .hoveredText {
+  transform: translateY(-100%);
+}
+
+#canvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.page9Btn {
+  transition: 1s ease-in-out;
+}
+
+.page9Hover {
+  z-index: 0;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  transition: .3s ease-in-out;
+  z-index: 1;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+
+.page9Btn:hover .page9Text{
+  transform: translateY(-100%);
+}
+
+.page9Btn:hover .page9Hover {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  height: 100%;
+}

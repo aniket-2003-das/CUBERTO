@@ -1,0 +1,64 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.commonHoverEffect{
+  width: 100%;
+  height: 0%;
+  bottom: 0%;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.page3Btn:hover .commonHoverEffect{
+  height: 100%;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+.btnText{
+  background-color: transparent;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+.page3Btn:hover .btnText{
+  transform: translateY(-100%);
+}
+
+.page6BtnHoverEffect{
+  width: 100%;
+  height: 0%;
+  bottom: 0%;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+.page6Btn:hover .btnText{
+  transform: translateY(-100%);
+}
+
+.page6Btn:hover .page6BtnHoverEffect{
+  height: 100%;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
